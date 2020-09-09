@@ -1,0 +1,23 @@
+
+<!doctype html>
+<html ng-app="myModule">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="four.js"></script>
+</head>
+<body>
+    <div ng-controller="myController">
+        <div>
+            Country : {{ country.name }}
+        </div>
+        <div>
+            Capital : {{ country.capital }}
+        </div>
+        <div>
+            <img ng-src="{{country.flag}}"
+                 alt="{{ country.name + ' Flag' }}"
+                 style="height:100px; width:200px" />
+        </div>
+    </div>
+</body>
+</html>
